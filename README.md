@@ -18,6 +18,10 @@ Start the application (using CPU):
 
 `docker-compose --profile cpu up`
 
+Access the application by opening your browser and entering:
+
+`http://localhost:8080`
+
 ## Using GPU
 
 You will need to [upgrade your Container Runtime](https://docs.nvidia.com/dgx/nvidia-container-runtime-upgrade/) to enable CUDA.
