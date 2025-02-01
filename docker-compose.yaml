@@ -3,7 +3,7 @@ volumes:
   ollama_storage:
 
 x-open-webui: &service-open-webui
-  image: ghcr.io/open-webui/open-webui:main
+  image: ghcr.io/open-webui/open-webui:latest
   network_mode: host
   environment:
     - OLLAMA_BASE_URL=http://127.0.0.1:11434
@@ -37,7 +37,7 @@ services:
   ollama-cpu:
     profiles: ["cpu"]
     <<: *service-ollama
-  
+
   ollama-gpu:
     profiles: ["gpu-nvidia"]
     <<: *service-ollama
@@ -54,7 +54,7 @@ services:
     <<: *init-ollama
     depends_on:
       - ollama-cpu
-  
+
   ollama-pull-llama-gpu:
     profiles: ["gpu-nvidia"]
     <<: *init-ollama
