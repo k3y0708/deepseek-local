@@ -8,7 +8,7 @@ Run DeepSeek R1 Locally with One Command!
 
 Clone the repository.
 
-`git clone git@github.com:mischavandenburg/deepseek-local.git`
+`git clone https://github.com/mischavandenburg/deepseek-local.git`
 
 Enter the directory.
 
